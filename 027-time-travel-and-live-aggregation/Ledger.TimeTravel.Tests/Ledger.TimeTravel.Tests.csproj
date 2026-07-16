@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <RootNamespace>Ledger.TimeTravel</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="Testcontainers.PostgreSql" Version="4.1.0" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="$(RelaySrc)/Nuvora.Nexus.Relay/Nuvora.Nexus.Relay.csproj" />
+    <ProjectReference Include="$(RelaySrc)/Nuvora.Nexus.Relay.Core/Nuvora.Nexus.Relay.Core.csproj" />
+    <ProjectReference Include="$(RelaySrc)/Nuvora.Nexus.Relay.EventStore/Nuvora.Nexus.Relay.EventStore.csproj" />
+    <ProjectReference Include="$(RelaySrc)/Nuvora.Nexus.Relay.EventStore.EfCore/Nuvora.Nexus.Relay.EventStore.EfCore.csproj" />
+    <ProjectReference Include="$(RelaySrc)/Nuvora.Nexus.Relay.Persistence/Nuvora.Nexus.Relay.Persistence.csproj" />
+    <ProjectReference Include="$(RelaySrc)/Nuvora.Nexus.Relay.Persistence.EfCore/Nuvora.Nexus.Relay.Persistence.EfCore.csproj" />
+  </ItemGroup>
+
+</Project>

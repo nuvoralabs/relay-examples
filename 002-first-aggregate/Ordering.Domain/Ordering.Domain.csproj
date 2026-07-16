@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Ordering.Domain</RootNamespace>
+    <AssemblyName>Ordering.Domain</AssemblyName>
+  </PropertyGroup>
+
+  <!--
+    A domain model only needs Relay.Core: AggregateRoot, Entity, ValueObject, Guard, DomainEvent.
+    Notice there is no dependency on the event store, the web layer, or any infrastructure — the
+    domain stays pure and fast to test.
+  -->
+  <ItemGroup>
+    <ProjectReference Include="$(RelaySrc)/Nuvora.Nexus.Relay.Core/Nuvora.Nexus.Relay.Core.csproj" />
+  </ItemGroup>
+
+</Project>

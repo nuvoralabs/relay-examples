@@ -1,0 +1,24 @@
+<Project>
+
+  <!--
+    Shared build settings for every Relay sample. Samples live OUTSIDE the framework's own
+    Directory.Build.props (under libraries/), so this file pins their target framework and
+    language options, and exposes $(RelaySrc) so sample projects can reference the framework
+    source by relative path regardless of how deeply they are nested.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <IsPackable>false</IsPackable>
+    <!-- Samples are teaching code; do not fail the build on analyzer/style warnings. -->
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- Absolute path to the framework source, derived from this file's location. -->
+    <RelaySrc>$(MSBuildThisFileDirectory)../libraries/nuvora-nexus-relay/src</RelaySrc>
+  </PropertyGroup>
+
+</Project>

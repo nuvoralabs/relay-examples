@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <RootNamespace>Logistics.Courier</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--
+      CourierExecutor / ICourierActivity live in Nuvora.Nexus.Relay.Sagas
+      (namespace Nuvora.Nexus.Relay.Sagas.Courier); Sagas references Core.
+      The courier itself is pure — no database, no broker.
+    -->
+    <ProjectReference Include="$(RelaySrc)/Nuvora.Nexus.Relay.Core/Nuvora.Nexus.Relay.Core.csproj" />
+    <ProjectReference Include="$(RelaySrc)/Nuvora.Nexus.Relay.Sagas/Nuvora.Nexus.Relay.Sagas.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <RootNamespace>Coordination.Fenced</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Fenced election + membership use the in-memory coordination primitives in Relay.Core —
+         no database, no broker, no Docker. -->
+    <ProjectReference Include="$(RelaySrc)/Nuvora.Nexus.Relay.Core/Nuvora.Nexus.Relay.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Fulfillment</RootNamespace>
+    <AssemblyName>Fulfillment</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="$(RelaySrc)/Nuvora.Nexus.Relay/Nuvora.Nexus.Relay.csproj" />
+    <ProjectReference Include="$(RelaySrc)/Nuvora.Nexus.Relay.Core/Nuvora.Nexus.Relay.Core.csproj" />
+    <!-- Cache: the query pipeline needs an ICachingStrategy registered (AddRelayInMemoryCache). -->
+    <ProjectReference Include="$(RelaySrc)/Nuvora.Nexus.Relay.Cache/Nuvora.Nexus.Relay.Cache.csproj" />
+    <ProjectReference Include="$(RelaySrc)/Nuvora.Nexus.Relay.Cache.InMemory/Nuvora.Nexus.Relay.Cache.InMemory.csproj" />
+  </ItemGroup>
+
+  <!-- The buses and the demo host need a DI container and a logging stack. -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.0" />
+  </ItemGroup>
+
+</Project>
