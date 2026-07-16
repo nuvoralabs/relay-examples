@@ -1,6 +1,6 @@
 # Sample 012 — Messaging & Transports
 
-Companion to **[Article 012 — Messaging & Transports](../../docs/articles/012-messaging-and-transports.md)**.
+Companion to **[Article 012 — Messaging & Transports](https://relay.nuvoralabs.com/articles/messaging-and-transports/)**.
 
 The transport abstraction — `IMessageBroker` (publish) and `IMessageConsumer` (subscribe) — over the
 **in-memory transport**, which is interchangeable with RabbitMQ / Azure Service Bus. A subscribed

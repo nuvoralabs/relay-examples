@@ -1,9 +1,9 @@
 # Sample 037 — Operational Event Queries
 
-Companion to **[Article 037 — Operational Event Queries](../../docs/articles/037-operational-event-queries.md)**.
+Companion to **[Article 037 — Operational Event Queries](https://relay.nuvoralabs.com/articles/operational-event-queries/)**.
 
 The event store is an append-only log, **not** a query database — you query *projections*
-(see [007 — Projections](../../docs/articles/007-projections.md)). But during an incident you sometimes
+(see [007 — Projections](https://relay.nuvoralabs.com/articles/projections/)). But during an incident you sometimes
 need to scan the raw log for a needle: *"show me every `PaymentFailed` event, in order, so I can see what
 happened."* Relay's `IEventStore.QueryEventsAsync(predicate, maxResults, …)` is that one-off forensic
 scan — a **default interface method** that pages the global log via `GetAllEventsAsync` and returns

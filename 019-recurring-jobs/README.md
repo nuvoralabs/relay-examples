@@ -1,6 +1,6 @@
 # Sample 019 — Recurring Jobs
 
-Companion to **[Article 019 — Recurring Jobs](../../docs/articles/019-recurring-jobs.md)**.
+Companion to **[Article 019 — Recurring Jobs](https://relay.nuvoralabs.com/articles/recurring-jobs/)**.
 
 Two pieces of "do work on a schedule":
 

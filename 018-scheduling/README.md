@@ -1,6 +1,6 @@
 # Sample 018 — Scheduling
 
-Companion to **[Article 018 — Scheduling](../../docs/articles/018-scheduling.md)**.
+Companion to **[Article 018 — Scheduling](https://relay.nuvoralabs.com/articles/scheduling/)**.
 
 Run a command **later**. `IScheduler.ScheduleCommandAsync(command, delay)` stages a durable scheduled
 message with the right due time; when due, the `SchedulerProcessor` claims it and the

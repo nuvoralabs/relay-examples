@@ -1,6 +1,6 @@
 # Sample 017 — Routing Slips & Compensation
 
-Companion to **[Article 017 — Routing Slips & Compensation](../../docs/articles/017-routing-slips.md)**.
+Companion to **[Article 017 — Routing Slips & Compensation](https://relay.nuvoralabs.com/articles/routing-slips/)**.
 
 A distributed transaction without 2PC. A `BookingSaga` books a flight, a hotel, and a car across
 services; each forward leg `RecordCompensation`s the command that would undo it. On `TripFailed`,

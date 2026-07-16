@@ -1,6 +1,6 @@
 # Sample 036 — Standalone Courier Activities
 
-Companion to **[Article 036 — Standalone Courier Activities](../../docs/articles/036-standalone-courier-activities.md)**.
+Companion to **[Article 036 — Standalone Courier Activities](https://relay.nuvoralabs.com/articles/standalone-courier-activities/)**.
 
 A bounded, in-process distributed transaction without a full saga. A `CourierExecutor` runs an
 ordered itinerary of `ICourierActivity` steps (here: reserve stock, charge the card, book a

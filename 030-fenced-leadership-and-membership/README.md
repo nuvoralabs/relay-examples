@@ -1,9 +1,9 @@
 # Sample 030 — Fenced Leadership & Cluster Membership
 
-Companion to **[Article 030 — Fenced Leadership & Cluster Membership](../../docs/articles/030-fenced-leadership-and-membership.md)**.
+Companion to **[Article 030 — Fenced Leadership & Cluster Membership](https://relay.nuvoralabs.com/articles/fenced-leadership-and-membership/)**.
 
 The renewable-lease companion to the connection-bound election in
-**[023 — Distributed Coordination](../../docs/articles/023-distributed-coordination.md)**. Where a
+**[023 — Distributed Coordination](https://relay.nuvoralabs.com/articles/distributed-coordination/)**. Where a
 connection-bound lock only fails over when a leader's process *dies*, a renewable lease fails over when a
 leader merely *stalls*, and hands each new leader a **fencing token** so a resumed stale leader can be
 rejected downstream. All three primitives live in `Nuvora.Nexus.Relay.Core.Coordination`.

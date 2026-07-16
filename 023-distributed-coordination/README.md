@@ -1,6 +1,6 @@
 # Sample 023 — Distributed Coordination
 
-Companion to **[Article 023 — Distributed Coordination](../../docs/articles/023-distributed-coordination.md)**.
+Companion to **[Article 023 — Distributed Coordination](https://relay.nuvoralabs.com/articles/distributed-coordination/)**.
 
 How multiple instances of a service cooperate instead of colliding:
 

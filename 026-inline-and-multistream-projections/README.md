@@ -1,6 +1,6 @@
 # Sample 026 — Inline & Multi-Stream Projections
 
-Companion to **[Article 026 — Inline & Multi-Stream Projections](../../docs/articles/026-inline-and-multistream-projections.md)**.
+Companion to **[Article 026 — Inline & Multi-Stream Projections](https://relay.nuvoralabs.com/articles/inline-and-multistream-projections/)**.
 
 Two read-model techniques that sit alongside the async projection host of article 007:
 

@@ -1,6 +1,6 @@
 # Sample 024 — Schema Evolution
 
-Companion to **[Article 024 — Schema Evolution](../../docs/articles/024-schema-evolution.md)**.
+Companion to **[Article 024 — Schema Evolution](https://relay.nuvoralabs.com/articles/schema-evolution/)**.
 
 Events are forever — once persisted, a stream's history must keep deserializing even as the code
 evolves. Relay gives you two tools, both shown here **without a database** (pure serializer + registry):

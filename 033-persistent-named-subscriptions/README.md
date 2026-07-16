@@ -1,6 +1,6 @@
 # Sample 033 — Persistent Named Subscriptions
 
-Companion to **[Article 033 — Persistent Named Subscriptions](../../docs/articles/033-persistent-named-subscriptions.md)**.
+Companion to **[Article 033 — Persistent Named Subscriptions](https://relay.nuvoralabs.com/articles/persistent-named-subscriptions/)**.
 
 A **durable, named position** over the global event log. Where a projection checkpoint is a position
 *owned by the framework's projection runner*, a named subscription is the same idea exposed for **your

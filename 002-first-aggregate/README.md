@@ -1,6 +1,6 @@
 # Sample 002 — First Aggregate (Ordering domain)
 
-Companion to **[Article 002 — First Aggregate](../../docs/articles/002-first-aggregate.md)**.
+Companion to **[Article 002 — First Aggregate](https://relay.nuvoralabs.com/articles/first-aggregate/)**.
 
 A pure domain model — no web host, no database, no infrastructure — that demonstrates Relay's DDD
 building blocks:

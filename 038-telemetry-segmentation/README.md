@@ -1,6 +1,6 @@
 # Sample 038 — Telemetry Segmentation (per-tenant / per-dimension metrics)
 
-Companion to **[Article 038 — Telemetry Segmentation](../../docs/articles/038-telemetry-segmentation.md)**.
+Companion to **[Article 038 — Telemetry Segmentation](https://relay.nuvoralabs.com/articles/telemetry-segmentation/)**.
 
 Relay's command/query metrics are tagged by message *type* out of the box (`relay.queries.executed`
 with `query`/`success`). This sample shows how to **segment** those metrics by a business dimension —
@@ -38,5 +38,5 @@ dotnet test samples/038-telemetry-segmentation/TelemetrySegmentation.Sample.Test
 
 ## See also
 
-- [020 — Multi-tenancy](../../docs/articles/020-multi-tenancy.md) — where the ambient tenant comes from.
-- [021 — Observability](../../docs/articles/021-observability.md) — the instrumentation this builds on.
+- [020 — Multi-tenancy](https://relay.nuvoralabs.com/articles/multi-tenancy/) — where the ambient tenant comes from.
+- [021 — Observability](https://relay.nuvoralabs.com/articles/observability/) — the instrumentation this builds on.

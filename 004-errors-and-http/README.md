@@ -1,6 +1,6 @@
 # Sample 004 — Errors & HTTP
 
-Companion to **[Article 004 — Errors & HTTP](../../docs/articles/004-errors-and-http.md)**.
+Companion to **[Article 004 — Errors & HTTP](https://relay.nuvoralabs.com/articles/errors-and-http/)**.
 
 A database-free Payments API that exercises Relay's exception → HTTP mapping. Every handler throws
 *meaning* (a `NotFoundException`, a `BusinessRuleException`, a custom `InsufficientFundsException`) and

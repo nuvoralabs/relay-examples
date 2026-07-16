@@ -1,6 +1,6 @@
 # Sample 016 — State-Machine Sagas
 
-Companion to **[Article 016 — State-Machine Sagas](../../docs/articles/016-state-machine-sagas.md)**.
+Companion to **[Article 016 — State-Machine Sagas](https://relay.nuvoralabs.com/articles/state-machine-sagas/)**.
 
 The same order saga as article 015, authored **declaratively** with the state-machine DSL
 (`Initially` / `During` / `When().Then().Schedule().TransitionTo().Finalize()`). The framework proves the

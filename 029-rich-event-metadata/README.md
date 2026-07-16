@@ -1,8 +1,8 @@
 # Sample 029 — Rich Event Metadata
 
-Companion to **[Article 029 — Rich Event Metadata](../../docs/articles/029-rich-event-metadata.md)**.
+Companion to **[Article 029 — Rich Event Metadata](https://relay.nuvoralabs.com/articles/rich-event-metadata/)**.
 
-Builds on **[005 — Event Sourcing Basics](../../samples/005-event-sourcing-basics)**. An event-sourced
+Builds on **[005 — Event Sourcing Basics](../005-event-sourcing-basics)**. An event-sourced
 `Order` aggregate is unchanged business code, but a custom **`IEventMetadataEnricher`** stamps
 cross-cutting context — **correlation id, causation id, actor, tenant** — onto the metadata stored
 *alongside* every appended event. The headers can then be read straight back off the event log. It

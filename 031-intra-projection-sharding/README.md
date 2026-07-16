@@ -1,6 +1,6 @@
 # Sample 031 — Intra-Projection Sharding
 
-Companion to **[Article 031 — Intra-Projection Sharding](../../docs/articles/031-intra-projection-sharding.md)**.
+Companion to **[Article 031 — Intra-Projection Sharding](https://relay.nuvoralabs.com/articles/intra-projection-sharding/)**.
 
 Article 008 establishes that a projection has exactly one active worker (the per-checkpoint advisory lock).
 That keeps the read model correct, but it also caps a single hot projection's throughput at one worker. This

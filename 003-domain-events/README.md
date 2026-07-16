@@ -1,6 +1,6 @@
 # Sample 003 — Domain Events
 
-Companion to **[Article 003 — Domain Events](../../docs/articles/003-domain-events.md)**.
+Companion to **[Article 003 — Domain Events](https://relay.nuvoralabs.com/articles/domain-events/)**.
 
 A small **console** app (no web host, no database) showing how a domain event raised by an aggregate
 fans out to multiple **domain-event handlers** that react independently:

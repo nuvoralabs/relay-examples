@@ -1,6 +1,6 @@
 # Sample 015 — Sagas
 
-Companion to **[Article 015 — Sagas](../../docs/articles/015-sagas.md)**.
+Companion to **[Article 015 — Sagas](https://relay.nuvoralabs.com/articles/sagas/)**.
 
 An imperative process manager (`OrderSaga`): an `OrderPlaced` event starts a saga (correlated by order
 id), a `PaymentReceived` event completes it and cancels its timeout, and an `OrderExpired` timeout

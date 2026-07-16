@@ -1,6 +1,6 @@
 # Sample 022 — Resiliency Primitives
 
-Companion to **[Article 022 — Resiliency](../../docs/articles/022-resiliency.md)**.
+Companion to **[Article 022 — Resiliency](https://relay.nuvoralabs.com/articles/resiliency/)**.
 
 The building blocks Relay uses internally to keep a system standing when a dependency misbehaves —
 exposed as small, pure primitives you can use directly. All live in `Nuvora.Nexus.Relay.Core.Resiliency`

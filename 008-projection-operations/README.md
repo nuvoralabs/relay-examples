@@ -1,6 +1,6 @@
 # Sample 008 — Projection Operations
 
-Companion to **[Article 008 — Projection Operations](../../docs/articles/008-projection-operations.md)**.
+Companion to **[Article 008 — Projection Operations](https://relay.nuvoralabs.com/articles/projection-operations/)**.
 
 What keeps a projection healthy in production: surviving a **poison event** and **rebuilding** a read
 model from history.

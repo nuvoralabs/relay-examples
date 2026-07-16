@@ -1,6 +1,6 @@
 # Sample 027 — Time-Travel & Live Aggregation
 
-Companion to **[Article 027 — Time-Travel & Live Aggregation](../../docs/articles/027-time-travel-and-live-aggregation.md)**.
+Companion to **[Article 027 — Time-Travel & Live Aggregation](https://relay.nuvoralabs.com/articles/time-travel-and-live-aggregation/)**.
 
 The read-side counterpart to event sourcing. A `BankAccount` aggregate is event-sourced exactly as in
 [sample 005](../005-event-sourcing-basics), but here nothing is read for *writing* — the

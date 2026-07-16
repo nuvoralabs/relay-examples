@@ -1,6 +1,6 @@
 # Sample 021 — Observability (telemetry)
 
-Companion to **[Article 021 — Observability](../../docs/articles/021-observability.md)**.
+Companion to **[Article 021 — Observability](https://relay.nuvoralabs.com/articles/observability/)**.
 
 Relay is instrumented with **OpenTelemetry-native** primitives out of the box: a single
 `ActivitySource` and a single `Meter`, both named `Nuvora.Nexus.Relay` (`RelayTelemetry.SourceName` /

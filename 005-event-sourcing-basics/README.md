@@ -1,6 +1,6 @@
 # Sample 005 — Event Sourcing Basics
 
-Companion to **[Article 005 — Event Sourcing Basics](../../docs/articles/005-event-sourcing-basics.md)**.
+Companion to **[Article 005 — Event Sourcing Basics](https://relay.nuvoralabs.com/articles/event-sourcing-basics/)**.
 
 The first **infrastructure-backed** sample. A bank-ledger `Account` aggregate is event-sourced: nothing
 but its stream of events (`AccountOpened`, `MoneyDeposited`, `MoneyWithdrawn`) is stored, and current

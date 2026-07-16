@@ -1,6 +1,6 @@
 # Sample 011 — The Outbox Pattern
 
-Companion to **[Article 011 — The Outbox Pattern](../../docs/articles/011-outbox.md)**.
+Companion to **[Article 011 — The Outbox Pattern](https://relay.nuvoralabs.com/articles/outbox/)**.
 
 Proves the outbox's core guarantee: an integration event published in a command is staged in the
 **same transaction**, so it commits or rolls back atomically with the state change — no dual-write.

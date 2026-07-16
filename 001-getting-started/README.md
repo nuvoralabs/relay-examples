@@ -1,6 +1,6 @@
 # Sample 001 — Getting Started (Catalog API)
 
-Companion to **[Article 001 — Getting Started](../../docs/articles/001-getting-started.md)**.
+Companion to **[Article 001 — Getting Started](https://relay.nuvoralabs.com/articles/getting-started/)**.
 
 A database-free product catalog that demonstrates the CQRS core of Relay:
 
@@ -14,7 +14,7 @@ A database-free product catalog that demonstrates the CQRS core of Relay:
 - **Exception → HTTP mapping** via `AddRelayExceptionHandling` / `UseRelayExceptionHandling`.
 - **`[AllowAnonymous]`** on every message. Relay is *fail-closed*: it refuses to start unless each
   command/query declares an authorization posture. This API is public, so each endpoint says so
-  explicitly — [article 010](../../docs/articles/010-authorization.md) shows real authorization.
+  explicitly — [article 010](https://relay.nuvoralabs.com/articles/authorization/) shows real authorization.
 
 There is no database: state lives in a singleton `ProductCatalog`, so the commands are marked
 `[SkipTransaction]`.

@@ -1,6 +1,6 @@
 # Sample 035 — Crypto-Shredding for the Right to Erasure
 
-Companion to **[Article 035 — Crypto-Shredding for the Right to Erasure](../../docs/articles/035-crypto-shredding-right-to-erasure.md)**.
+Companion to **[Article 035 — Crypto-Shredding for the Right to Erasure](https://relay.nuvoralabs.com/articles/crypto-shredding-right-to-erasure/)**.
 
 An append-only event store never deletes — but GDPR's "right to erasure" requires that a data subject's
 PII can be made to disappear. **Crypto-shredding** reconciles the two: encrypt each subject's PII under a

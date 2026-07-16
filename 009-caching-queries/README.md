@@ -1,6 +1,6 @@
 # Sample 009 — Caching Queries
 
-Companion to **[Article 009 — Caching Queries](../../docs/articles/009-caching-queries.md)**.
+Companion to **[Article 009 — Caching Queries](https://relay.nuvoralabs.com/articles/caching-queries/)**.
 
 A database-free console app showing Relay's query caching:
 

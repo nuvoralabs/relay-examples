@@ -1,6 +1,6 @@
 # Sample 034 — Event Archiving & Compaction
 
-Companion to **[Article 034 — Event Archiving & Compaction](../../docs/articles/034-event-archiving-and-compaction.md)**.
+Companion to **[Article 034 — Event Archiving & Compaction](https://relay.nuvoralabs.com/articles/event-archiving-and-compaction/)**.
 
 An event store is append-only, so the hot `relay_events` table only ever grows. For long-lived streams
 that are already covered by a snapshot, you can **compact** the live table by moving a stream's old

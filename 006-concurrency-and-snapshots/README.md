@@ -1,6 +1,6 @@
 # Sample 006 — Concurrency & Snapshots
 
-Companion to **[Article 006 — Concurrency & Snapshots](../../docs/articles/006-concurrency-and-snapshots.md)**.
+Companion to **[Article 006 — Concurrency & Snapshots](https://relay.nuvoralabs.com/articles/concurrency-and-snapshots/)**.
 
 Extends the article-005 ledger with the two tools that make event sourcing practical at scale:
 

@@ -1,8 +1,8 @@
 # Sample 032 — Automated Blue/Green Projection Rebuilds
 
-Companion to **[Article 032 — Automated Blue/Green Projection Rebuilds](../../docs/articles/032-automated-blue-green-rebuilds.md)**.
+Companion to **[Article 032 — Automated Blue/Green Projection Rebuilds](https://relay.nuvoralabs.com/articles/automated-blue-green-rebuilds/)**.
 
-**Prerequisite:** [Article 008 — Projection Operations](../../docs/articles/008-projection-operations.md), which
+**Prerequisite:** [Article 008 — Projection Operations](https://relay.nuvoralabs.com/articles/projection-operations/), which
 introduces the shadow (blue/green) rebuild and the **operator-driven** swap (`IProjectionRebuildManager.SwapAsync`).
 
 This sample closes that loop. `IAutomaticProjectionSwapper` / `AutomaticProjectionSwapper`

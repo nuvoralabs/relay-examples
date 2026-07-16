@@ -1,6 +1,6 @@
 # Sample 020 — Multi-Tenancy
 
-Companion to **[Article 020 — Multi-Tenancy](../../docs/articles/020-multi-tenancy.md)**.
+Companion to **[Article 020 — Multi-Tenancy](https://relay.nuvoralabs.com/articles/multi-tenancy/)**.
 
 Two halves of tenant isolation, both exercised without a database:
 

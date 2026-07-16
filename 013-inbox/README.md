@@ -1,6 +1,6 @@
 # Sample 013 — The Inbox Pattern
 
-Companion to **[Article 013 — The Inbox Pattern](../../docs/articles/013-inbox.md)**.
+Companion to **[Article 013 — The Inbox Pattern](https://relay.nuvoralabs.com/articles/inbox/)**.
 
 Idempotent consumption. The `InboxProcessor` records a dedup row (`relay_inbox_messages`) in the **same
 transaction** as the handler's effect, so at-least-once delivery becomes exactly-once *processing*.

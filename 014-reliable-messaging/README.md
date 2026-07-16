@@ -1,6 +1,6 @@
 # Sample 014 — Reliable Messaging (End to End)
 
-Companion to **[Article 014 — Reliable Messaging](../../docs/articles/014-reliable-messaging.md)**.
+Companion to **[Article 014 — Reliable Messaging](https://relay.nuvoralabs.com/articles/reliable-messaging/)**.
 
 Ties together the outbox (011), the transport (012), and the inbox (013) into one flow: a command
 publishes an integration event → it is staged as a committed **outbox** row → the **outbox processor**

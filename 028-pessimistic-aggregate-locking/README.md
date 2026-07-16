@@ -1,7 +1,7 @@
 # Sample 028 — Pessimistic Per-Aggregate Write Lock
 
-Companion to **[Article 028 — Pessimistic Per-Aggregate Write Lock](../../docs/articles/028-pessimistic-aggregate-locking.md)**.
-Prerequisite: **[Article 006 — Concurrency & Snapshots](../../docs/articles/006-concurrency-and-snapshots.md)**.
+Companion to **[Article 028 — Pessimistic Per-Aggregate Write Lock](https://relay.nuvoralabs.com/articles/pessimistic-aggregate-locking/)**.
+Prerequisite: **[Article 006 — Concurrency & Snapshots](https://relay.nuvoralabs.com/articles/concurrency-and-snapshots/)**.
 
 Optimistic concurrency is the right default for event-sourced aggregates: writers race, the
 expected-version check lets exactly one through, and the loser retries. For a genuinely **hot** aggregate

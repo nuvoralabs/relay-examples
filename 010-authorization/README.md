@@ -1,6 +1,6 @@
 # Sample 010 — Authorization
 
-Companion to **[Article 010 — Authorization](../../docs/articles/010-authorization.md)**.
+Companion to **[Article 010 — Authorization](https://relay.nuvoralabs.com/articles/authorization/)**.
 
 A database-free Documents API showing Relay's declarative, attribute-based authorization. Each message
 declares *who may run it*; the authorization pipeline behaviors (from `AddRelayAuth`) enforce it and

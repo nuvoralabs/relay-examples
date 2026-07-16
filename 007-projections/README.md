@@ -1,6 +1,6 @@
 # Sample 007 — Projections
 
-Companion to **[Article 007 — Projections](../../docs/articles/007-projections.md)**.
+Companion to **[Article 007 — Projections](https://relay.nuvoralabs.com/articles/projections/)**.
 
 The **read side** of event sourcing. The ledger's events drive a projection that maintains an
 `AccountBalanceReadModel` — a flat, query-optimised row per account — so the application can answer

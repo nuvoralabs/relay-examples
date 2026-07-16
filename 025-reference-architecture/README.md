@@ -1,6 +1,6 @@
 # Sample 025 — Reference Architecture (Storefront)
 
-Companion to **[Article 025 — Reference Architecture](../../docs/articles/025-reference-architecture.md)**.
+Companion to **[Article 025 — Reference Architecture](https://relay.nuvoralabs.com/articles/reference-architecture/)**.
 
 The capstone: a single service that composes the pieces from the earlier articles into the canonical
 Relay shape — **CQRS + event sourcing + the outbox + projections + queries**, all on one PostgreSQL
