@@ -68,7 +68,26 @@ Each sample directory has its own `README.md` with concrete `curl` commands and 
 
 ## How samples reference the framework
 
-Samples reference the framework's projects directly (not NuGet packages) via the shared
-`$(RelaySrc)` property defined in [`Directory.Build.props`](./Directory.Build.props), so they
-always build against the source in this repository. Building a sample also builds the framework
-projects it depends on.
+The samples build in two modes, decided automatically by
+[`Directory.Build.props`](./Directory.Build.props) / [`Directory.Build.targets`](./Directory.Build.targets):
+
+- **Inside the `nuvora-nexus-net` monorepo** the framework source exists at `$(RelaySrc)`, so
+  samples reference the framework projects directly via `ProjectReference` and always build
+  against the source in the repository. Building a sample also builds the framework projects
+  it depends on.
+- **In the public examples repo** ([`nuvoralabs/relay-examples`](https://github.com/nuvoralabs/relay-examples))
+  the framework source is absent, so those references are rewritten to `PackageReference`s
+  against the published `Nuvora.Nexus.Relay.*` NuGet packages, pinned to the version in
+  `relay-version.props` (stamped with the latest published version on every sync).
+
+### Restoring packages in the examples repo
+
+The packages are hosted on GitHub Packages, which requires authentication even for public
+feeds. The committed `NuGet.config` reads credentials from environment variables — set them
+before restoring:
+
+```bash
+export GITHUB_ACTOR=<your-github-username>
+export GITHUB_TOKEN=<a-token-with-read:packages>
+dotnet test Relay.Samples.slnx
+```
