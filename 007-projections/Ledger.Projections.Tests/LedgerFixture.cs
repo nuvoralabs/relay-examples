@@ -46,6 +46,8 @@ public sealed class LedgerFixture : IAsyncLifetime
         services.AddRelayProjectionCheckpointsEfCore<LedgerDbContext>();
         services.AddSingleton<ProjectionFailureCache>();
         services.AddScoped<IProjection, AccountBalanceProjection>();
+        services.AddScoped<IProjection, VipAccountProjection>();
+        services.AddScoped<IProjection, AccountActivityProjection>();
 
         services.AddRelay(typeof(LedgerFixture).Assembly);
 
