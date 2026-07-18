@@ -14,6 +14,11 @@ How multiple instances of a service cooperate instead of colliding:
   the real Postgres `pg_advisory_lock`: mutual exclusion across processes, enforced by the database.
   **Requires Docker** (Testcontainers PostgreSQL).
 
+> The same `IDistributedLock` / `ILeaseStore` / `INodeRegistry` contracts also run on ValKey (or any
+> Redis-compatible server) via `Nuvora.Nexus.Relay.Coordination.ValKey` —
+> `AddRelayValKeyCoordination(...)` + `AddRelayDistributedLockValKey()` etc. — for deployments that
+> coordinate on a key-value store instead of PostgreSQL.
+
 ## Test it
 
 ```bash

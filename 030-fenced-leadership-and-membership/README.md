@@ -22,6 +22,11 @@ with `Advance(...)` instead of sleeping, so expiry and liveness are exact and ne
 - **`INodeRegistry` / `InMemoryNodeRegistry`** — a node heartbeats and appears in `GetLiveNodesAsync`, and
   disappears once its last heartbeat is older than the liveness TTL.
 
+> In production the same contracts run on PostgreSQL (`AddRelayLeaseStorePostgres`,
+> `AddRelayNodeRegistryPostgres`) or on ValKey/Redis (`AddRelayLeaseStoreValKey`,
+> `AddRelayNodeRegistryValKey` from `Nuvora.Nexus.Relay.Coordination.ValKey`, arbitrated on the
+> server's clock).
+
 ## Files
 
 | File | Shows | DB? |

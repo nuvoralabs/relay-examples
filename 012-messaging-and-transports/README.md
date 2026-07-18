@@ -19,4 +19,5 @@ Consumer received 2 message(s): order.placed, order.shipped
 ```
 
 > Requires the **.NET 10 SDK**. No Docker/database needed. Swap `AddRelayInMemoryTransport` for
-> `AddRelayRabbitMq(...)` and the publish/subscribe code is unchanged.
+> `AddRelayRabbitMq(...)` — or any other broker package, e.g. `AddRelayKafka(...)` or
+> `AddRelayValKey(...)` (ValKey Streams) — and the publish/subscribe code is unchanged.
